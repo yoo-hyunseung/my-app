@@ -14,6 +14,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
   <App/>
+  <App/>
   <hr/>
   <br/>
   <Hello/>
