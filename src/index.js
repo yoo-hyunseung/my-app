@@ -4,11 +4,14 @@ import './index.css';  // html jsp -> style
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Hello from './hello';
+<<<<<<< HEAD
 const col = "{color:red}"
 const name = {firstname : 'hello',lastname : "React"};
 function formatUser(name){
   return name.firstname + ' ' + name.lastname;
 }
+=======
+>>>>>>> 942880d (SpringAxios)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
