@@ -17,9 +17,9 @@ function Hello(props) {
   const [board, setBoard] = useState([]);
 
     useEffect(() => {
-      axios.get(props.link).then((response)=>{
-        if(response.data){
-          setBoard(response.data);
+      axios.get(props.link).then((free)=>{
+        if(free.data){
+          setBoard(free.data);
         } else{
           alert("fail");
         }
@@ -29,7 +29,7 @@ function Hello(props) {
   return (
     <div className="Hello">
       <ul>
-        {board.map((indexs) => <li key={`${indexs}`}> 게시글 번호 {indexs.no}{indexs.subject}{indexs.content}</li>)}
+        {board.map((indexs) => <li key={`${indexs}`}> 게시글 번호 {indexs.no} <i>제목:</i> {indexs.subject} <i>내용:</i> {indexs.content} 이름 {indexs.name}</li>)}
         <div>{console.log(board)}</div>
       </ul>
     </div>
